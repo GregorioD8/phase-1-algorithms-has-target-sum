@@ -1,5 +1,18 @@
 function hasTargetSum(array, target) {
+tF = false
   // Write your algorithm here
+for(let i = 0; i < array.length; i++){
+  num1 = array[i]
+  for (let j = i + 1; j< array.length; j++){
+    num2 = array[j]
+    console.log(`${num1}+${num2}=${num1 + num2}    target? ${num1 + num2 === target}`)
+    if(num1 + num2 === target){
+      tF = true
+    }
+  }
+
+}
+ return tF
 }
 
 /* 
@@ -7,7 +20,10 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
+  Add your pseudocode here  
+ 
+  add first number to each number 
+  add first number to second number
 */
 
 /*
